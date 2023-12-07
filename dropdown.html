@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            gap: 16px;
+            min-height: 100vh;
+        }
+
+        .sidebar{
+            width: 300px;
+        }
+
+        .sidebar, .content {
+            border: 1px solid black;
+        }
+
+        .sidebar .menu.open .submenu{
+            display: block;
+        }
+
+        .sidebar .menu .submenu{
+            display: none;
+        }
+
+        .content {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <p>Sidebar</p>
+                <nav>
+                    <ul class="menu open">
+                        <li>
+                            <p>Menu 1</p> 
+                            <ul class="submenu">
+                                <li><a href="#">Submenu 1</a></li>
+                                <li><a href="#">Submenu 2</a></li>
+                                <li><a href="#">Submenu 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+    
+                    <ul class="menu">
+                        <li>
+                            <p>Menu 2</p> 
+                            <ul class="submenu">
+                                <li><a href="#">Submenu 1</a></li>
+                                <li><a href="#">Submenu 2</a></li>
+                                <li><a href="#">Submenu 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+    
+                    <ul class="menu">
+                        <li>
+                            <p>Menu 3</p> 
+                            <ul class="submenu">
+                                <li><a href="#">Submenu 1</a></li>
+                                <li><a href="#">Submenu 2</a></li>
+                                <li><a href="#">Submenu 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </div>
+            <div class="content">
+                <p>content</p>
+                
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menuTitles = document.querySelectorAll('.menu > li > p');
+    
+            menuTitles.forEach(title => {
+                title.addEventListener('click', function() {
+                    // Find the closest parent 'ul.menu' of the clicked 'p' and toggle the 'open' class
+                    this.closest('.menu').classList.toggle('open');
+                });
+            });
+        }
+    
+        toggleMenu();
+    </script>
+    
+    
+</body>
+</html>

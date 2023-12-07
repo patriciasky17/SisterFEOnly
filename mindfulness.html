@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Assessment - Serenaya</title>
+
+    <!-- Google Font (Crimson Text + Oxygen) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/color.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/stars.css">
+    <link rel="stylesheet" href="./assets/css/stars2.css">
+    <link rel="stylesheet" href="./assets/css/stars3.css">
+</head>
+
+<body class="main-page">
+    <header id="header">
+        <nav>
+            <div class="navigation-bar">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./assets/img/SerenayaLogo.png" alt="Serenaya Logo">
+                    </a>
+                </div>
+        
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="selfassessment.html">Self Assessment</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                    </ul>
+                </div>
+            
+                <div class="login-register">
+                    <a href="login.html" class="login">Login</a>
+                    <a href="register.html" class="register">Get Started</a>
+                </div>
+
+
+                <div class="hamburger-icon" onclick="changeIcon()">
+                    <i class="bi bi-list" id="hamburger" alt="hamburger icon"></i>
+                    <i class="bi bi-x-lg close" id="x-icon" alt="close icon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="wrapper" style="position: absolute; top:0; margin: 0; padding:0;">
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        </section>
+
+        <section id="hero">
+            <div class="inner-hero">
+                <div class="title-and-desc">
+                    <div class="title">
+                        <h1>Mindfulness</h1>
+                    </div>
+                    <div class="desc">
+                        <p>Temukan Ketenangan Diri Melalui Teknik Pernafasan: Sederhana, Efektif, dan Fokus pada Diri Sendiri.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <svg width="1440" height="299" viewBox="0 0 1440 299" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0 59.8L48 69.7667C96 79.7333 192 99.6667 288 79.7333C384 59.8 480 0 576 0C672 0 768 59.8 864 69.7667C960 79.7333 1056 39.8667 1152 29.9C1248 19.9333 1344 39.8667 1392 49.8333L1440 59.8V299H1392C1344 299 1248 299 1152 299C1056 299 960 299 864 299C768 299 672 299 576 299C480 299 384 299 288 299C192 299 96 299 48 299H0V59.8Z"
+                    fill="url(#paint0_linear_170_1768)" />
+                <defs>
+                    <linearGradient id="paint0_linear_170_1768" x1="720" y1="0" x2="720" y2="299" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#F1B4BB" />
+                        <stop offset="1" stop-color="#FDF0F0" />
+                    </linearGradient>
+                </defs>
+            </svg>
+                
+        </section>
+
+        <section id="mindfulness-explanation" class="container">
+            <div class="image">
+                <img src="./assets/img/MindfullnessSection.png" alt="Circle Pink and Blue flower-like">
+            </div>
+            <p>Terdapat enam tahap dalam teknik pernafasan dengan pendekatan mindfulness yang beragam namun tetap mengutamakan setiap tahap selama lima menit.</p>
+            <p>Fitur ini bisa diakses secara full dan disimpan kedalam histori saat sudah login atau memiliki akun</p>
+            <div class="mindfulness-steps">
+                <a class="mindfulness-step" href="breathing-phase.html">
+                    <h6>Kesadaran Tubuh</h6>
+                </a>
+                <a class="mindfulness-step locked" href="#">
+                    <h6>Pernapasan Variatif</h6>
+                </a>
+                <a class="mindfulness-step locked" href="#">
+                    <h6>Jeda dalam Pernapasan</h6>
+                </a>
+                <a class="mindfulness-step locked" href="#">
+                    <h6>Sumber Napas Masuk dan Keluar</h6>
+                </a>
+                <a class="mindfulness-step locked" href="#">
+                    <h6>Observasi Napas di Dada dan Perut</h6>
+                </a>
+                <a class="mindfulness-step locked" href="#">
+                    <h6>Pernapasan dalam Keseluruhan Tubuh</h6>
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+
+
+        
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

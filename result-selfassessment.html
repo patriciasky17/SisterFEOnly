@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Assessment - Serenaya</title>
+
+    <!-- Google Font (Crimson Text + Oxygen) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/color.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/stars3.css">
+</head>
+
+<body class="main-page">
+    <header id="header">
+        <nav>
+            <div class="navigation-bar">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./assets/img/SerenayaLogo.png" alt="Serenaya Logo">
+                    </a>
+                </div>
+
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="selfassessment.html">Self Assessment</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                    </ul>
+                </div>
+
+                <div class="login-register">
+                    <a href="login.html" class="login">Login</a>
+                    <a href="register.html" class="register">Get Started</a>
+                </div>
+
+
+                <div class="hamburger-icon" onclick="changeIcon()">
+                    <i class="bi bi-list" id="hamburger" alt="hamburger icon"></i>
+                    <i class="bi bi-x-lg close" id="x-icon" alt="close icon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="wrapper" style="position: absolute; top:0; margin: 0; padding:0;">
+            <div id="stars3"></div>
+        </section>
+
+        <section id="hero">
+            <div class="inner-hero">
+                <div class="title-and-desc">
+                    <div class="title">
+                        <h2>Hasil Tes</h2>
+                    </div>
+                    <div class="desc">
+                        <p>Generalized Anxiety Disorder-7 (GAD-7)</p>
+                    </div>
+                </div>
+            </div>
+
+            <svg width="1440" height="268" viewBox="0 0 1440 268" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0 15.5353L60 9.52428C120 3.51322 240 -8.50891 360 9.52428C480 27.5575 600 75.646 720 87.6681C840 99.6902 960 75.646 1080 57.6128C1200 39.5796 1320 27.5575 1380 21.5464L1440 15.5353V268H1380C1320 268 1200 268 1080 268C960 268 840 268 720 268C600 268 480 268 360 268C240 268 120 268 60 268H0V15.5353Z"
+                    fill="url(#paint0_linear_171_321)" />
+                <defs>
+                    <linearGradient id="paint0_linear_171_321" x1="720" y1="0" x2="720" y2="268"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.166667" stop-color="#F1B4BB" />
+                        <stop offset="0.755208" stop-color="#FDF0F0" />
+                    </linearGradient>
+                </defs>
+            </svg>
+
+
+        </section>
+
+        <section id="test-results" class="container">
+            <div class="result-top">
+                <div class="results-title-and-desc">
+                    <h4>Mild Anxiety</h4>
+                    <p>Lorem ipsum dolor sit amet, ipsum dolor sit amet</p>
+                </div>
+                <div class="progress-bar">
+                    <div class="indicator-value">
+                        <div class="first"></div>
+                        <div class="second"></div>
+                        <div class="third"></div>
+                    </div>
+                    <div id="value"></div>
+                </div>
+                <div class="result-score">
+                    <p>Score: 9/21</p>
+                </div>
+            </div>
+
+            <div class="result-description">
+                <p>Your results are indicative of someone who likely handles your anger well in many situations, but
+                    there are still times when your anger is handling you. Recognize the areas where you are doing well
+                    in handling your anger, but also be cautious that your anger is not getting out of hand in other
+                    ways.
+
+                    <br><br>
+
+                    Think about the situations where your anger comes out most often. Is it with loved ones? At work?
+                    What happens when you react angrily? Are you a shouter, or do you turn your anger inward? What words
+                    do you tend to use? What feelings tend to come out when you’re angry, and how do those feelings find
+                    expression, in good ways or bad? Consider the following possibilities for future action:
+                </p>
+
+                <div class="next-steps">
+                    <h5>Next Steps</h5>
+                    <p>Your results are indicative of someone who likely handles your anger well in many situations, but
+                        there are still times when your anger is handling you. Recognize the areas where you are doing well
+                        in handling your anger, but also be cautious that your anger is not getting out of hand in other
+                        ways.
+    
+                        <br><br>
+    
+                        Think about the situations where your anger comes out most often. Is it with loved ones? At work?
+                        What happens when you react angrily? Are you a shouter, or do you turn your anger inward? What words
+                        do you tend to use? What feelings tend to come out when you’re angry, and how do those feelings find
+                        expression, in good ways or bad? Consider the following possibilities for future action:
+                    </p>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+
+
+
+        <script src="./assets/js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
